@@ -9,7 +9,7 @@ import org.apache.commons.io.FileUtils;
 public class Main {
 
 	public static void main(String[] args) throws IOException {
-		List<String> listaDeEmails = FileUtils.readLines(new File("lista .txt"));
+		List<String> listaDeEmails = FileUtils.readLines(new File("emailsList.txt"));
 		for (String s : listaDeEmails) {
 			Email email = new Email(s);
 			if (!email.isValid()) 
